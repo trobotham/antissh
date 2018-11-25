@@ -319,7 +319,7 @@ def main():
         log_chan(bot, 'antissh has started!')
 
     @bot.on('notice')
-    def handle_connection_notice(_message, _user, _target, text):
+    def handle_connection_notice(message, user, target, text):
         if 'connecting' not in text:
             return
 
